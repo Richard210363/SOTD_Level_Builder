@@ -8,7 +8,7 @@ current_map=current_level["map"]
 current_name=current_level["Name"]
 level_manager.set_name(current_name)
 enemy_counter=0
-for y in range(24):
+for y in range(25):
     print(y)
     line=current_map[y]
     screen_y = 288 - (y * 24)

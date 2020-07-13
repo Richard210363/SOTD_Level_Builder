@@ -1,7 +1,7 @@
 class Levels(object):
     """description of class"""
 
-    level_list = [{"Name":"level_1","map":[
+    level_list = [{"Name":"1","map":[
             "XXXXXXXXXXXXXXXXXXXXXXXXX",
             "X  XXXXXXX          XXXXX",
             "X  XXXXXXX  XXXXXX  XXXXX",
