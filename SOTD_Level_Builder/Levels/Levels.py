@@ -27,6 +27,33 @@ class Levels(object):
             "XX           XXXX       X",
             "XXXX                    X",
             "XXXXXXXXXXXXXXXXXXXXXXXXX"
+            ]},
+            {"Name":"2","map":[
+            "X                       X",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "                         ",
+            "X                       X"
             ]}]
 
 
