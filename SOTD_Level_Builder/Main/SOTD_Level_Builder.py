@@ -1,7 +1,7 @@
 import Levels.Levels as levels_
 import DataManagement.level_manager as level_manager_
 
-level_manager=level_manager_.LevelManager("./SOTDLevelBuilderOutputXXX.db")
+level_manager=level_manager_.LevelManager("./SOTDLevelBuilderOutput.db")
 
 #Level Builder
 
@@ -48,5 +48,11 @@ for y in range(25):
             print("x: " + str(screen_x))
             print("y: " + str(screen_y))
             level_manager.append_treasure_bullets_to_level(screen_x, screen_y)
+        if line[i]=="F":
+            print("found")
+            screen_x = -288 + (i * 24)
+            print("x: " + str(screen_x))
+            print("y: " + str(screen_y))
+            level_manager.append_fences_to_level(screen_x, screen_y)
 
 level_manager.saveMemoryVersionOfDatabaseToFile()

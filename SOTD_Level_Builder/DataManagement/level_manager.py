@@ -8,7 +8,7 @@ class LevelManager:
 
     def set_name(self, current_name):
         self.level_i=current_name
-        self.level_coordinate_dictionary = {"Levels":{self.level_i:{"Walls":[], "Players":[], "Enemies":[], "Treasure_Lives":[], "Treasure_Bullets":[]}}}
+        self.level_coordinate_dictionary = {"Levels":{self.level_i:{"Walls":[], "Players":[], "Enemies":[], "Treasure_Lives":[], "Treasure_Bullets":[], "Fences":[]}}}
 
     def append_walls_to_level(self, x, y):
         coordinate=(x, y)
@@ -30,6 +30,10 @@ class LevelManager:
     def append_treasure_bullets_to_level(self, x, y):
         coordinate=(x, y)
         self.level_coordinate_dictionary["Levels"][self.level_i]["Treasure_Bullets"].append(coordinate)
+
+    def append_fences_to_level(self, x, y):
+        coordinate=(x, y)
+        self.level_coordinate_dictionary["Levels"][self.level_i]["Fences"].append(coordinate)        
         
     def saveMemoryVersionOfDatabaseToFile(self):
         json.dump(self.level_coordinate_dictionary , open(self.location, "w+"))
