@@ -1,11 +1,11 @@
 import Levels.Levels as levels_
 import DataManagement.level_manager as level_manager_
 
-level_manager=level_manager_.LevelManager("./SOTDLevelBuilderOutput.db")
+level_manager=level_manager_.LevelManager("./SOTDLevelBuilderOutputXXX.db")
 
 #Level Builder
 
-current_level=levels_.Levels.level_list[1]
+current_level=levels_.Levels.level_list[0]
 current_map=current_level["map"]
 current_name=current_level["Name"]
 level_manager.set_name(current_name)

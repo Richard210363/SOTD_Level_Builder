@@ -1,7 +1,7 @@
 import json
 import os
 
-class LevelManager(object):
+class LevelManager:
     def __init__(self , location):
         self.location = os.path.expanduser(location)
         self.level_i=""
