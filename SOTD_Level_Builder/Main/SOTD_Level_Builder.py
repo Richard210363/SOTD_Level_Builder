@@ -48,11 +48,17 @@ for y in range(25):
             print("x: " + str(screen_x))
             print("y: " + str(screen_y))
             level_manager.append_treasure_bullets_to_level(screen_x, screen_y)
-        if line[i]=="F":
+        if line[i]=="F" or line[i]=="S":
             print("found")
             screen_x = -288 + (i * 24)
             print("x: " + str(screen_x))
             print("y: " + str(screen_y))
             level_manager.append_fences_to_level(screen_x, screen_y)
+        if line[i]=="S":
+            print("found")
+            screen_x = -288 + (i * 24)
+            print("x: " + str(screen_x))
+            print("y: " + str(screen_y))
+            level_manager.append_safe_area_to_level(screen_x, screen_y)
 
 level_manager.saveMemoryVersionOfDatabaseToFile()

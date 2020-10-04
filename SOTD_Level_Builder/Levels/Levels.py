@@ -3,9 +3,9 @@ class Levels(object):
 
     level_list = [{"Name":"1","map":[
             "XXXXXXXXXXXXXXXXXXXXXXXXX",
-            "X       X        X      X",
-            "X       X        X      X",
-            "XXX XXXXXXX   XXXXXX  XXX",
+            "XSSSSSSSX        X      X",
+            "XSSSSSSSX        X      X",
+            "XXXSXXXXXXX   XXXXXX  XXX",
             "X                       X",
             "X   XXXXXXXFFFXXXXXX    X",
             "X   X     XFFFX    X    X",
