@@ -10,8 +10,9 @@ level_manager_db=level_manager_db_.level_manager_database()
 current_level=levels_.Levels.level_list[0]
 current_map=current_level["map"]
 current_name=current_level["Name"]
+current_level_number=current_level["Level number"]
 level_manager.set_name(current_name)
-level_manager_db.set_name(current_name)
+level_manager_db.set_level_attributes(current_name, current_level_number)
 enemy_counter=0
 #for y in range(25):
 #    print(y)

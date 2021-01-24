@@ -4,5 +4,5 @@ class level_manager_database(object):
     """Data access layer"""
     #def __init__(self):
 
-    def set_name(self, current_name):
-        db_manager.save_level_name(current_name)
+    def set_level_attributes(self, current_name, current_level_number):
+        db_manager.save_level_attributes(current_name, current_level_number)

@@ -18,9 +18,9 @@ cursor = db.cursor()
 #for table in tables:
 #    print(table)
 
-def save_level_name(level_name):
-    query = "INSERT INTO level_start_conditions (name, lives, bullets) VALUES (%s, %s, %s)"
-    values = (level_name, 5, 10)
+def save_level_attributes(level_name, level_number):
+    query = "INSERT INTO level_start_conditions (name, number, lives, bullets) VALUES (%s, %s, %s, %s)"
+    values = (level_name, level_number, 5, 10)
 
     cursor.execute(query, values) #execute the command
     db.commit() # Tell the database to commit
