@@ -21,8 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DatabaseManagement\database_manager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseManagement\database_utilities.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DataManagement\level_manager.py" />
     <Compile Include="DataManagement\game_state_manager.py" />
+    <Compile Include="DataManagement\level_manager_database.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Levels\Levels.py">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +41,7 @@
     <Folder Include="Main\" />
     <Folder Include="Levels\" />
     <Folder Include="DataManagement\" />
+    <Folder Include="DatabaseManagement\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
