@@ -12,7 +12,14 @@ current_map=current_level["map"]
 current_name=current_level["Name"]
 current_level_number=current_level["Level number"]
 level_manager.set_name(current_name)
-level_manager_db.set_level_attributes(current_name, current_level_number)
+#level_manager_db.set_level_attributes(current_name, current_level_number)
+
+player_name="Shaun"
+player_lives=5
+player_bullets=10
+player_coordinates=(2,9)
+level_manager_db.set_player_attributes(player_name, player_lives, player_bullets, player_coordinates)
+
 enemy_counter=0
 #for y in range(25):
 #    print(y)
